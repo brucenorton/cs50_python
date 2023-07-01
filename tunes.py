@@ -10,8 +10,3 @@ response = requests.get("https://itunes.apple.com/search?entity=song&limit=9&ter
 results = response.json()
 for result in results["results"]:
     print(result["artistName"] + " - " + result["trackName"] + " - " + result["collectionName"])
-    # print(json.dumps(result,indent=
-#change
-# "artistName": "The Beatles",
-# "collectionName": "The Beatles 1967-1970 (The Blue Album)",
-# "trackName": "Hey Jude",
